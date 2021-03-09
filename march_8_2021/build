@@ -1,0 +1,4 @@
+gcc -g -O -c glad.c
+c++  -g -O -c main.cpp -lglfw -framework Cocoa -framework OpenGL -framework IOKit
+c++ -o main main.o glad.o -lglfw -framework Cocoa -framework OpenGL -framework IOKit
+rm *.o
